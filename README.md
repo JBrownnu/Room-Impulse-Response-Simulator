@@ -1,32 +1,13 @@
 # Final-project-JBrownnu
 
-1. Who is on your team? If you are working with a partner, how will the labor be divided? 
-- I will be on a team by myself
-2. An overview of the project similar in scope and length to the example projects listed below.
-- My project would be a room acoustic simulation program. The program will take in a sound clip as an input, and simulate the sound being played in a different environment, such as a lecture hall or auditorium. The program will be able to use this information to give recommendations on a desired environment for an event or speech given the amount of sound equipment available (number of microphones being used at once and the number of speakers available)
+The main feature of this program is that it can record a 5 second audio clip and simulate it inside different locations. This simulation will then be outputted by the program so that the original recording and the simulated clip can be compared to see the difference. The other feature of the program includes giving recommendations to users based on the provided audience size and speaker equipment. There are classes created to generate each room and a method in each to create the simulation and output the audiofile. There is also another class to record and output the initial 5 second clip. 
 
-3. A short description of the structure of your project. How many classes will you write? What the methods be for each class? (You can change this if it turns out a better structure would work better once you start writing code and you decide to refactor. Just try to come up with a reasonable one for the proposal.)
-- A class representing the room being simulated as well
-- 	A simulation method is used to create the room
-- 	A method used to add the sources and microphones to the room
-- A class representing the sources or speakers within the room that will play the given sound clip
-- A class representing the microphones within the room
-- A class representing the directivity of the speakers and microphones from each other
-- 	A directivity method will be created 
-- Parent class to run the simulation
-- 	Method to simulate the sound in the room
-- 	Method to print recommendations on room to the user based on room impulse response (plot of how the sound is simulated within the room)
+The main file inherits methods from all 4 classes in order to allow for the simulation of all the rooms as well as record the initial audioclip. The three rooms use the audio file object from the audio class as an input in order to output the simulated audio clip. If you want to test out the program for yourself, download the zip file from github and open it in your python environment. Then after installing the listed packages run the main.py file.
+- pyroomacoustics
+- IPython.display
+- librosa
+- librosa.display 
+- matplotlib.pyplot
+- numpy
 
-4. What libraries and tools will you need to learn to use?
-- Numpy library for mathematical computations 
-- matplotlib.pyplot plotting room impulse response
-- pyroomacoustics for room simulation
-- scipy.io for playing sound clip
-
-5. Identify the highest-priority features, the medium-priority features, and the lowest-priority features for your project.
-- Highest Priority:
-- 	Simulating how the sound clip will sound in different environments
-- Medium Priority:
-- 	Giving recommendations to user based on sound equipment
-- Lowest Priority:
-- 	Give recommendations to user based on audience size
+If one were to develop this project further, something they could do to improve the project is provide all simulated samples to the user at once, instead of only giving them the recommended sample. Another improvement to the project would be creating a room based on parameters provided by the user, and then creating a simulated sample from those parameters.
