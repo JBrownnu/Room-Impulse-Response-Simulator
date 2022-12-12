@@ -6,6 +6,8 @@ from large_classroom import Large_Classroom
 
 
 '''
+Run this file in order to run the program
+
 Provides recommendations based on audience size and speaker equipment and outputs room simulation
 Methods: Audio.record_audio()
     Inputs:
