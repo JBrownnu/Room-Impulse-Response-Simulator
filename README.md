@@ -9,5 +9,6 @@ The main file inherits methods from all 4 classes in order to allow for the simu
 - librosa.display 
 - matplotlib.pyplot
 - numpy
+- pyaudio
 
 These packages can be installed using pip if they are not installed already e.g. pip -install pyroomacoustics. If one were to develop this project further, something they could do to improve the project is provide all simulated samples to the user at once, instead of only giving them the recommended sample. Another improvement to the project would be creating a room based on parameters provided by the user, and then creating a simulated sample from those parameters.
